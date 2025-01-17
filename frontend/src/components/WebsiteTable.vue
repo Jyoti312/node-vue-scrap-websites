@@ -5,8 +5,8 @@
             <thead>
                 <tr>
                     <th>Name</th>
+                    <th>Url</th>
                     <th>Description</th>
-                    <th>Logo</th>
                     <th>Facebook</th>
                     <th>LinkedIn</th>
                     <th>Twitter</th>
@@ -19,12 +19,12 @@
             <tbody>
                 <tr v-for="website in websites" :key="website._id">
                     <td>{{ website.name }}</td>
+                    <td>{{ website.url }}</td>
                     <td>{{ website.description }}</td>
-                    <td><img :src="website.logo" alt="Logo" style="max-width: 100px;" /></td>
-                    <td><a :href="website.facebook_url" target="_blank">Facebook</a></td>
-                    <td><a :href="website.linkedin_url" target="_blank">LinkedIn</a></td>
-                    <td><a :href="website.twitter_url" target="_blank">Twitter</a></td>
-                    <td><a :href="website.instagram_url" target="_blank">Instagram</a></td>
+                    <td><a :href="website.facebook" target="_blank">Facebook</a></td>
+                    <td><a :href="website.linkedin" target="_blank">LinkedIn</a></td>
+                    <td><a :href="website.twitter" target="_blank">Twitter</a></td>
+                    <td><a :href="website.instagram" target="_blank">Instagram</a></td>
                     <td>{{ website.address }}</td>
                     <td>{{ website.phone }}</td>
                     <td>{{ website.email }}</td>

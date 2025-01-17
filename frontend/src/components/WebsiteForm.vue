@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="website-table">
     <form @submit.prevent="submitForm">
       <label for="website">Enter Website Link:</label>
       <input
@@ -50,7 +50,7 @@ export default {
 
 <style scoped>
 form {
-  display: flex;
+  //display: flex;
   flex-direction: column;
   max-width: 400px;
   margin: 20px auto;

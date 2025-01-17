@@ -5,7 +5,6 @@ import TheWelcome from './components/TheWelcome.vue'
 
 <template>
   <div id="app">
-    <h1>Website Link Submission</h1>
     <WebsiteForm />
     <WebsiteTable />
   </div>
@@ -30,6 +29,9 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  width : 100px;
+}
 header {
   line-height: 1.5;
 }
