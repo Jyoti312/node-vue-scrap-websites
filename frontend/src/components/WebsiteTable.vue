@@ -49,7 +49,7 @@ export default {
     methods: {
         async fetchWebsites() {
             try {
-                const response = await axios.get('http://localhost:3000/api/websites');
+                const response = await axios.get('/api/websites');
                 this.websites = response.data;
             } catch (error) {
                 console.error('Error fetching website data:', error);

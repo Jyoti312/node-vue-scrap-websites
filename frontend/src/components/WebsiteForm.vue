@@ -34,7 +34,7 @@ export default {
       }
 
       try {
-        const response = await axios.post('http://localhost:3000/api/scrape', { url: this.websiteLink });
+        const response = await axios.post('/api/scrape', { url: this.websiteLink });
         this.scrapedData = response.data.data; // Display the scraped data
         alert(`Data saved successfully with ID: ${response.data.id}`);
       } catch (error) {
